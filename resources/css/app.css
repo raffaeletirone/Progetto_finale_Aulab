@@ -1,0 +1,935 @@
+@import 'bootstrap';
+@import 'bootstrap-icons';
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+::placeholder {
+    color: rgb(83, 83, 83);
+    opacity: 1;
+    transition: 0.2s;
+    font-size: large;
+
+}
+
+input:focus::placeholder {
+    opacity: 0;
+
+}
+
+
+footer {
+    background-color: rgb(22, 66, 60);
+}
+
+/* ARTICLE */
+
+.text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+.category-button {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(196, 218, 210);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all 0.3s;
+    font-size: large;
+
+}
+
+.category-button:hover {
+    transform: translateY(-2px);
+}
+
+
+.category-button:focus {
+    background-color: rgb(233, 239, 236);
+    color: rgb(0, 0, 0);
+}
+
+
+.detail-button {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 53, 53);
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all 0.3s;
+    width: auto;
+}
+
+.detail-button:hover {
+    transform: translateY(-2px);
+    background-color: #444444;
+}
+
+
+.detail-button:focus {
+    background-color: #565656;
+}
+
+
+
+/* NAVBAR */
+
+
+.form-search {
+    width: 75%;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.4s;
+}
+
+.form-search:focus {
+    box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
+    outline: none;
+}
+
+
+
+
+.category {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.nav-link-cat {
+    color: rgb(196, 218, 210);
+    transition: 0.2s;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+}
+
+.nav-link-cat:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    color: rgb(196, 218, 210);
+    transition: 0.2s;
+    padding: 5px;
+
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+
+}
+
+.nav-link-list {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(4, 4, 4);
+    transition: 0.2s;
+    padding: 5px;
+}
+
+.nav-link-list:hover {
+    color: rgb(117, 117, 117);
+
+}
+
+.nav-link-aside {
+    margin-bottom: 2%;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(4, 4, 4);
+    transition: 0.2s;
+    transition: all 0.4s;
+}
+
+.nav-link-aside:hover {
+    color: rgb(255, 255, 255);
+    background-color: #2c2c2c;
+    
+    transform: translateY(-2px);
+
+
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.navbar {
+    background-color: #16423c;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+}
+
+.btn-src {
+    background-color: #6A9C89;
+    color: black;
+    height: 85%;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    border-style: solid;
+    transition: all 0.4s;
+
+}
+
+.btn-src:hover {
+    background-color: #29b8b5d0;
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(41, 184, 181, 0.816) 0px 3px 6px, rgba(41, 184, 181, 0.816) 0px 3px 6px;
+}
+
+
+.btn-rg-hm {
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(106, 156, 137);
+    color: black;
+    height: auto;
+    line-height: 40px;
+    padding: 0 5px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.btn-rg-hm:hover {
+    padding: 0 7px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.log-btn {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+.log-btn:hover {
+    text-decoration: underline;
+}
+
+.log-btn:focus {
+    font-size: 15px;
+}
+
+.dropdown-toggle {
+    background-color: rgb(106, 156, 137);
+    color: white;
+    transition: 0.4s;
+}
+
+.dropdown-toggle:hover {
+    background-color: rgb(233, 239, 236);
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-toggle:focus {
+    background-color: rgb(233, 239, 236);
+    color: rgb(0, 0, 0);
+}
+
+
+
+.form-control {
+    height: 75%;
+}
+
+
+/* REGISTER */
+.card {
+    height: auto;
+    border: none;
+    border-radius: 12px;
+
+}
+
+.card-header {
+    border-radius: 0 0 0 0 !important;
+    background: #2c2c2c;
+    text-align: center;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-body {
+    background-color: rgb(211, 211, 211);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card-body label {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.btn-rg {
+    width: 50%;
+    background-color: #16423C;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-rg:hover {
+    background-color: #6A9C89;
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-input-rg {
+    width: 100%;
+    padding: 10px 35px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: padding 0.3s;
+}
+
+.form-input-rg:focus {
+    padding: 12px 35px;
+    padding-left: 5px;
+    box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
+    outline: none;
+}
+
+/* LOGIN */
+
+.lg-card {
+    background-color: rgb(221, 221, 221);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.form-input-lg {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: padding 0.3s;
+}
+
+.form-input-lg:focus {
+    padding: 12px;
+    outline: none;
+    box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
+}
+
+
+/* SCHEDA DETTAGLIO ARTICOLO */
+
+
+.card-show {
+    min-height: 600px;
+}
+
+#show_card {
+    background-color: rgb(22, 66, 60);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.78);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 80%;
+}
+
+
+
+
+/* ERRORI */
+
+.error-message {
+    background-color: rgb(192, 106, 106);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* NUOVO ARTICOLO */
+
+
+.img-preview {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    width: 80%;
+}
+
+
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    margin: 1%;
+    background-color: #ffffff;
+}
+
+.add_image {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add_image-label {
+    cursor: pointer;
+}
+
+/* Effetto hover */
+.add_image:hover {
+    background-color: #2980b9;
+}
+
+
+
+.divider {
+    margin-top: 2%;
+    border-left: 2px solid #807c7c;
+    opacity: 0.5;
+    min-height: 100%;
+    display: block;
+    align-items: center;
+}
+
+.divider-vert {
+    margin-top: 2%;
+    border-top: 2px solid #807c7c;
+    opacity: 0.5;
+    min-width: 100%;
+    display: block;
+    align-items: center;
+}
+
+
+.article-add {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.form-input-add {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+    transition: all 0.3s;
+    font-size: medium;
+}
+
+.form-input-add:focus {
+    outline: none;
+    box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
+}
+
+.alert-success {
+    background-color: #14d8b1f1;
+    font-weight: bold;
+    border: none;
+}
+
+.add_article_btn {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #29b8b6;
+    transition: all 0.5s;
+
+}
+
+.add_article_btn:hover {
+    background-color: #239c9a;
+    transform: translateY(-2px)
+}
+
+.add_article_btn_fr {
+    width: 5%;
+    background-color: #6A9C89;
+    color: black;
+    height: 85%;
+    margin-left: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    border-style: solid;
+    transition: all 0.4s;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.add_article_btn_fr:hover {
+    background-color: #76af99;
+    color: rgb(0, 0, 0);
+    box-shadow: #28b8b6d0 0px 5px 10px;
+}
+
+.form_art {
+    min-width: 100%;
+}
+
+.form_art label {
+    color: rgb(0, 0, 0)
+}
+
+/* IMMAGINI */
+
+.custom-image {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 2px;
+}
+
+.custom-image-rg {
+    width: 20%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.home-background {
+    background-image: url('/public/images/wemadeit-slide.png');
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+
+
+/* Stile generale per la card */
+.article-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    height: 370px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    justify-content: space-between;
+}
+
+
+.article-card-rev {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.image-container-create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Immagine dell'articolo */
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Dettagli dell'articolo */
+.article-details {
+    flex-grow: 1;
+    padding: 10px;
+    padding: 10px;
+    max-width: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Nome dell'articolo */
+.article-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Descrizione dell'articolo */
+.article-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Prezzo dell'articolo */
+.article-price {
+    font-size: 1.2em;
+    color: #27ae60;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Pulsanti */
+.article-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.article-buttons button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.article-buttons button:hover {
+    background-color: #2980b9;
+}
+
+/* Pulsante "Categoria" */
+.article-buttons .btn-category {
+    background-color: #f39c12;
+}
+
+.article-buttons .btn-category:hover {
+    background-color: #e67e22;
+}
+
+
+.aside {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+
+/* LINGUE */
+
+.dropdown-lang {
+    min-width: 20px;
+}
+
+.dropdown-toggle-lang {
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #16423C;
+
+}
+
+.dropdown-toggle-lang:hover {
+    color: rgb(197, 197, 197);
+}
+
+.dropdown-toggle-lang:focus {
+    border: none;
+}
+
+
+.title_show {
+    height: 33%;
+}
+
+
+/* IMMAGINI CAROSELLO */
+
+.carousel-item img {
+    width: 100%;
+    height: 300px;
+    /* Imposta l'altezza desiderata */
+    object-fit: contain;
+    /* Mantiene il rapporto di aspetto */
+}
+
+
+#heroCarousel .carousel-item {
+    height: 60vh;
+    /* Altezza fissa per ogni immagine, in questo caso schermo intero */
+}
+
+#heroCarousel .carousel-item img {
+    width: 100%;
+    /* L'immagine riempie tutta la larghezza */
+    height: 100%;
+    /* L'immagine riempie tutta l'altezza */
+    object-fit: cover;
+    /* Adatta l'immagine senza distorcerla */
+}
+
+.art-rev {
+    background-color: #6A9C89;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 6px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+
+}
+
+.art-rev:hover {
+    background-color: #7fb9a3;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 5%;
+    box-shadow: rgba(41, 184, 181, 0.816) 0px 3px 6px, rgba(41, 184, 181, 0.816) 0px 3px 6px;
+    transform: translateY(-2px);
+}
+
+.deco-title {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 8px;
+    margin-bottom: 5%;
+    margin-top: -2%;
+    text-align: center;
+}
+
+
+
+
+/* ----------------MOBILE---------------- */
+
+
+/* NAVBAR */
+
+.searchbar-mobile {
+    display: flex;
+    margin-top: 10px;
+}
+
+.dropdown-toggle-mobile {
+    background-color: rgb(106, 156, 137);
+    color: white;
+    transition: 0.4s;
+}
+
+
+/* ARTICLE-CARD */
+
+
+.article-card-sm {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 150px;
+}
+
+.image-container-sm {
+    height: 100px;
+    overflow: hidden;
+}
+
+.card-img-top-sm {
+    width: 100%;
+    height: auto;
+}
+
+.article-details-sm {
+    padding: 5px;
+}
+
+.article-name-sm {
+    font-size: 14px;
+}
+
+.article-description-sm {
+    font-size: 12px;
+}
+
+.article-price-sm {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.article-buttons-sm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.small-button {
+    font-size: 10px;
+    padding: 5px 8px;
+}
+
+
+/* Stili generali */
+.bg-body-secondary {
+    background-color: #f8f9fa;
+}
+
+.t-card-art {
+    font-size: 2rem;
+    color: #333;
+}
+
+.d-card-art {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.p-card-art {
+    font-size: 1.5rem;
+}
+
+/* Divider */
+
+.taller-carousel {
+    min-height: 60vh; /* Regola questa altezza a piacimento */
+    display: flex;
+    align-items: center;
+}
+
+.carousel-image-show {
+    height: 100%; /* Assicura che l'immagine riempia l'altezza */
+    object-fit: cover; /* Mantiene il rapporto dell'immagine e riempie l'area */
+}
+.divider-vert {
+    border-top: 2px solid #ddd;
+    width: 80%;
+    margin: auto;
+}/* Effetto sfumatura per la card */
+.larger-card {
+    min-height: 50vh; /* Almeno metà pagina */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: relative;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, rgba(0, 123, 255, 0.05), rgba(40, 167, 69, 0.05));
+    z-index: -1;
+    border-radius: 10px;
+}
+
+/* Stili per i pulsanti del carosello */
+.carousel-control-prev,
+.carousel-control-next {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .searchbar-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .form-search {
+        width: 85%;
+    }
+
+    .log-btn,
+    .btn-rg-hm {
+        padding: 5px 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .article-card {
+        max-width: 100%;
+    }
+}

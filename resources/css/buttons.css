@@ -1,0 +1,138 @@
+
+@import 'bootstrap-icons';
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+.container-btn-new {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.2em;
+    text-align: center;
+}
+
+@media(min-width:600px) {
+    .container-btn-new {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+/* SCRITTE */
+.btn-new {
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 260px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn-new-sm {
+    color: #6A9C89;
+    cursor: pointer;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 5px;
+    margin: 0 0 2em;
+    max-width: 260px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+
+.log-mobile{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.rg-mobile{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8%;
+    background-color: #2c2c2c;
+}
+
+
+@media(min-width:600px) {
+    .btn-new-sm {
+        margin: 4%;
+    }
+}
+
+@media(min-width:600px) {
+    .btn-new {
+        margin: 01em 2em;
+    }
+}
+
+.btn-new-sm:hover {
+    text-decoration: none;
+}
+
+.btn-new:hover {
+    text-decoration: none;
+}
+
+
+.btn-2 {
+    letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+    letter-spacing: 2px;
+}
+
+.btn-2:after,
+.btn-2:before {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1.5px solid #6a9c8900;
+    bottom: 0px;
+    margin: 10px auto;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.btn-2:before {
+    top: -8px;
+}
+
+.btn-2:after {
+    bottom: -8px;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #6A9C89;
+    transition: width 350ms ease-in-out;
+    width: 70%;
+}
+
+.btn-2:hover:before {
+    bottom: auto;
+    width: 70%;
+}
+
+
+
